@@ -38,12 +38,16 @@
 
         <div class="main">
             <!-- フォームに関する記述はここに -->
+            <form action="/create" method="post">
+                <label for="title">タイトル</label>
+                    <input type="text" name="title" id="title">
+                
             <form class="pure-form" action="#" method="#">
                 <fieldset>
                     <legend>新しいメモを追加</legend>
 
-                    <input type="text" name="" placeholder="タイトル">
-                    <input type="text" name="" placeholder="内容">
+                    <input type="text" name="title" placeholder="タイトル">
+                    <input type="text" name="content" placeholder="内容">
 
                     <label for="categories">カテゴリ</label>
                     <select id="categories" name="">

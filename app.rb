@@ -9,7 +9,18 @@ get '/' do
 end
 
 # メモを新しく作成するときの処理
+get '/' do
+    erb :index
+end
 
+post '/create' do
+    Item.create({
+        title: params[:title],
+        content: params[:content]
+    })
+
+    redirect '/'
+end
 # 特定のメモを編集するときの処理
 
 # 特定のメモを更新するときの処理
